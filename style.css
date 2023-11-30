@@ -2,7 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box 
-  }
+}
+html {
+    font-size: 62.5%;
+}
 container {
     display: flex;
 }
@@ -47,4 +50,20 @@ container {
 #form-sec {
     width: 66%;
     background-color: azure;
+    padding: 25px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+#intro {
+    font-size: 2rem;
+}
+#intro p {
+    margin-bottom: 15px;
+}
+#log-in {
+    font-size: 1.5rem;
+}
+#log-in a {
+    color: coral;
 }
