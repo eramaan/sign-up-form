@@ -108,14 +108,16 @@ input {
 input::placeholder {
     color: lightslategray;
 }
+input:invalid {
+    border: 1px solid lightcoral;
+}
+input:valid {
+    border: 1px solid lightseagreen;
+}
 input:focus {
     box-shadow:0 0 3px 1px lightslategray;
     border: 1px solid cornflowerblue;
     outline: 0;
-}
-input:invalid,
-.error {
-    border: 1px solid lightcoral;
 }
 button {
     font-size: 2rem;
