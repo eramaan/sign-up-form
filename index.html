@@ -23,10 +23,32 @@
             <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis cumque iste doloribus minima laboriosam perspiciatis tenetur, velit doloremque neque unde totam amet illum aliquid numquam quasi? Quam possimus libero animi.</p>
             <p>You <i>know</i> you want to.</p>
         </div>
+        <form action="some-page.html" method="post">
         <div id="form-fields">
             <h1>Let's do it!</h1>
-        </div>
-        <button type="submit">Create Account</button>
+                <div id="form-container">
+                    <div id="left">
+                        <label for="f-name">First Name</label>
+                        <input type="text" name="first_name" id="f-name" placeholder="Your name">
+                        <label for="email">Email</label>
+                        <input type="email" name="email_address" id="email" placeholder="Your email">
+                        <label for="psw-1">Password</label>
+                        <input type="password" name="password_1" id="psw-1" class="error" placeholder="Choose a password">
+                    </div>
+                    <div id="right">
+                        <label for="logo-name">Last name</label>
+                        <input type="text" name="last_name" id="l-name" placeholder="Your last name">
+                        <label for="phone">Phone number</label>
+                        <input type="number" name="phone_n" id="phone" placeholder="Your phone number">
+                        <label for="psw-2">Confirm password</label>
+                        <input type="password" name="password_2" id="psw-2" class="error" placeholder="Confirm your password">
+                    </div>
+                </div>
+            </div>
+            <div id="btn">
+                <button type="submit">Create Account</button>
+            </div>
+            </form>
         <div id="log-in">
             <p>Already have an account? <a href="http://">Log In</a></p>
         </div>

@@ -22,7 +22,7 @@ container {
 }
 .logo-bkgr {
     position: relative;
-    top: 33%;
+    top: 50%;
     background-color: black;
     opacity: 50%;
     width: 100%;
@@ -49,16 +49,24 @@ container {
 }
 #form-sec {
     width: 66%;
-    background-color: azure;
-    padding: 25px;
     display: flex;
     flex-flow: column;
     justify-content: center;
 }
+#intro,
+#form-fields {
+    padding: 25px;
+}
+#btn {
+    padding: 25px 25px 10px;
+}
+#log-in {
+    padding: 0 25px;
+}
 #intro {
     font-size: 2rem;
 }
-#intro p {
+#intro p:first-of-type {
     margin-bottom: 15px;
 }
 #log-in {
@@ -66,4 +74,59 @@ container {
 }
 #log-in a {
     color: coral;
+}
+#form-fields {
+    border-top: 1px lightslategray solid;
+    border-bottom: 1px lightslategray solid;
+    margin: 15px 0;
+    background-color: ghostwhite;
+    box-shadow:0 5px 10px -3px lightslategray;
+}
+#form-container {
+    display: flex;
+}
+#left,
+#right {
+    display: flex;
+    flex-direction: column;
+}
+#left{
+    margin-right: 50px;
+}
+label {
+    text-transform: uppercase;
+    margin: 5px 0;
+    font-family: 'Nova Square', sans-serif;
+}
+input {
+    margin-bottom: 10px;
+    border: 1px solid lightslategray;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: ghostwhite;
+}
+input::placeholder {
+    color: lightslategray;
+}
+input:focus {
+    box-shadow:0 0 3px 1px lightslategray;
+    border: 1px solid cornflowerblue;
+    outline: 0;
+}
+input:invalid,
+.error {
+    border: 1px solid lightcoral;
+}
+button {
+    font-size: 2rem;
+    background-color: cornflowerblue;
+    padding: 10px;
+    font-family: 'Nova Square', sans-serif;
+    border-radius: 4px;
+    border: 1px solid lightslategray;
+    box-shadow:0 0 3px 1px lightslategray;
+    text-transform: uppercase;
+}
+button:hover {
+    box-shadow:0 0 10px 3px lightslategray;
 }
